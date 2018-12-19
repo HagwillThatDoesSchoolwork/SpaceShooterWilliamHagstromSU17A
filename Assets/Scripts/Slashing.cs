@@ -24,7 +24,7 @@ public class Slashing : MonoBehaviour
 
     Vector3 slashPosition;
 
-    private void Start()
+    private void Awake()
     {
         ship = GetComponent<Ship>();
     }
@@ -72,27 +72,18 @@ public class Slashing : MonoBehaviour
         //Checks if the player left the play area and if that's the case then it puts the player back inside
         {
             if (slashPosition.x <= -8.9f)
-            {
-                print("Correcting X");
-                slashPosition.x += aimDirection.x * (8.9f + slashPosition.x - (playerSize / 2));
-            }
+                slashPosition.x += -(8.9f + slashPosition.x - (playerSize / 2));
+
             else if (slashPosition.x >= 8.9f)
-            {
-                print("Correcting X");
-                slashPosition.x += aimDirection.x * (8.9f - slashPosition.x - (playerSize / 2));
-            }
+                slashPosition.x += (8.9f - slashPosition.x - (playerSize / 2));
 
             if (slashPosition.y <= -5f)
-            {
-                print("Correcting Y");
-                slashPosition.y += aimDirection.y * (5f + slashPosition.y - (playerSize / 2));
-            }
+                slashPosition.y += -(5f + slashPosition.y - (playerSize / 2));
+
             else if (slashPosition.y >= 5f)
-            {
-                print("Correcting Y");
-                slashPosition.y += aimDirection.y * (5f - slashPosition.y - (playerSize / 2));
-            }
+                slashPosition.y += (5f - slashPosition.y - (playerSize / 2));
         }
+
         //The actual slash
         transform.position = slashPosition;
     }

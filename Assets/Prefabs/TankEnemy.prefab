@@ -108,7 +108,7 @@ MonoBehaviour:
   movementSpeed: 0.33
   hp: 5
   flickerTime: 0.1
-  flickerColour: {r: 1, g: 1, b: 1, a: 1}
+  flickerColour: {r: 1, g: 0, b: 0, a: 1}
 --- !u!212 &212596397819927308
 SpriteRenderer:
   m_ObjectHideFlags: 1

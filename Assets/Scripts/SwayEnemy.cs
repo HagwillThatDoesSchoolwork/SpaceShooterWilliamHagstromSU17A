@@ -13,7 +13,7 @@ public class SwayEnemy : Enemy
     {
         startTime = Time.time;
 
-        if (transform.position.y + swayHeight >= 5)
+        if (transform.position.y + 2 *swayHeight >= 5)
         {
             newYPos = transform.position.y - 2 * swayHeight - 0.5f;
             transform.position = new Vector3(transform.position.x, newYPos, 0);

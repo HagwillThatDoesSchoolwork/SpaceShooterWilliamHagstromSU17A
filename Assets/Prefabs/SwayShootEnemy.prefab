@@ -133,7 +133,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 1471593393910016, guid: 8f23049c9764dd14a86073e06cf761d5, type: 2}
   firePoint: {fileID: 4846060554281664}
-  cooldownTime: 1.33
+  cooldownTime: 1.5
 --- !u!114 &114809555467953646
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -149,7 +149,7 @@ MonoBehaviour:
   movementSpeed: 1
   hp: 1
   flickerTime: 0.1
-  flickerColour: {r: 1, g: 1, b: 1, a: 1}
+  flickerColour: {r: 1, g: 0, b: 0, a: 1}
   movementSpeedYMultiplier: 1
   swayHeight: 1
   swayFrequency: 1

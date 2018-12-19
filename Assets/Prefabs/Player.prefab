@@ -104,7 +104,7 @@ MonoBehaviour:
   movementSpeed: 3
   hp: 3
   flickerTime: 0.1
-  flickerColour: {r: 1, g: 0, b: 0, a: 0}
+  flickerColour: {r: 1, g: 0, b: 0, a: 1}
 --- !u!114 &114298101300894630
 MonoBehaviour:
   m_ObjectHideFlags: 1

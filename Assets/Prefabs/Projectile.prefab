@@ -72,7 +72,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -103,7 +103,7 @@ MonoBehaviour:
   movementSpeed: 4
   hp: 0
   flickerTime: 0.1
-  flickerColour: {r: 1, g: 1, b: 1, a: 1}
+  flickerColour: {r: 1, g: 0, b: 0, a: 1}
 --- !u!212 &212086976080914552
 SpriteRenderer:
   m_ObjectHideFlags: 1

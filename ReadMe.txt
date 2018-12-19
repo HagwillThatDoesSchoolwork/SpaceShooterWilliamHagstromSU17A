@@ -1,1 +1,1 @@
-LETA EFTER STÄLLEN DÄR DU KAN(!) SÄTTA IN ARV
+D-pad down (axis 4) för slash

@@ -15,12 +15,11 @@ public class Projectile : Enemy
         rb2d.velocity = -Vector2.right * movementSpeed;
     }
 
-    override protected void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.collider.CompareTag("Player"))
-        {
+        if (collision.CompareTag("Player"))
             DealDmg(collision.gameObject, dmg);
-            Destroy(gameObject);
-        }
+
+        Destroy(gameObject, flickerTime * 1.33f);
     }
 }
